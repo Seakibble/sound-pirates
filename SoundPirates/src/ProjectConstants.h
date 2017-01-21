@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 namespace ProjectConstants
 {
 	// app constants
@@ -10,5 +12,6 @@ namespace ProjectConstants
 	static const std::string    IMG_PATH_SCREEN_BACKGROUND = "images/water.jpg";
 	static const std::string    IMG_PATH_SCREEN_TITLE = "images/titleScreen.png";
 	static const std::string    IMG_PATH_PLAYER = "images/playerTemp.png";
+	static const std::string    IMG_PATH_BULLET = "images/bulletTemp.png";
 
 }

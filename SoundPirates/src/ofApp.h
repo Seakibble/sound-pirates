@@ -1,13 +1,11 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ProjectConstants.h"
+#include "AllHeaders.h"
 
-#include "app-screens/TitleScreen.h"
-#include "app-screens/GameOverScreen.h"
-#include "app-screens/GameWinScreen.h"
-
-#include "game/Game.h"
+#include "TitleScreen.h"
+#include "GameOverScreen.h"
+#include "GameWinScreen.h"
 
 class ofApp : public ofBaseApp{
 

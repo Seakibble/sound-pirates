@@ -1,7 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "../ProjectConstants.h"
 
 class GameObject
 {
@@ -20,6 +19,8 @@ public:
 	void setPosX(float _newX);
 	void setPosY(float _newY);
 	void setPosZ(float _newZ);
+
+	ofVec2f getPosition();
 
 	void setSpeed(ofVec3f _newSpeed);
 	void setSpeed(float _newX, float _newY);
