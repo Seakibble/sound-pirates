@@ -46,10 +46,10 @@
     <ClCompile Include="src\game\Game.cpp">
       <Filter>src\game</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\enemies\AI.cpp">
+    <ClCompile Include="src\game\enemies\Swarm.cpp">
       <Filter>src\game\enemies</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\enemies\Swarm.cpp">
+    <ClCompile Include="src\game\enemies\AI.cpp">
       <Filter>src\game\enemies</Filter>
     </ClCompile>
   </ItemGroup>
