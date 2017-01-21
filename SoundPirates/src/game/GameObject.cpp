@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GameObject.h"
+#include "ProjectConstants.h"
 
 //--------------------------------------------------------------
 GameObject::GameObject() {
@@ -21,7 +22,6 @@ void GameObject::init()
 void GameObject::update()
 {
 	m_pos += m_speed;
-	cout << m_pos.y << endl;
 
 	if (m_pos.x <= 0) {
 		m_pos.x = 0;
@@ -54,6 +54,10 @@ void GameObject::render()
 
 
 //-------------------------------------------------------
+ofVec2f GameObject::getPosition() {
+	return m_pos;
+}
+
 void GameObject::setPos(ofVec3f _newPos) {
 	m_pos.set(_newPos);
 }

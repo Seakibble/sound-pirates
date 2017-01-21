@@ -1,5 +1,7 @@
 #include "ofMain.h"
+#include "AllHeaders.h"
 #include "GameObject.h"
+#include "Bullet.h"
 
 class Game
 {
@@ -24,10 +26,16 @@ public:
 
 	GameState getGameState();
 
-private:
-	GameState             m_state;
+	ofVec2f getMousePosition();
 
+private:
+	void updateShip();
+	void updateBullet();
+
+	GameState m_state;
 	GameObject m_player;
 
 	ofImage m_bgImage;
+
+	Bullet m_bullet;
 };
