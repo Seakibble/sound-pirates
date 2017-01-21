@@ -1,5 +1,5 @@
 #include "ofApp.h"
-#include "AllHeaders.h"
+#include "ProjectConstants.h"
 //--------------------------------------------------------------
 void ofApp::setup(){
 
