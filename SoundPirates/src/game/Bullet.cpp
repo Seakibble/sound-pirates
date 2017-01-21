@@ -5,7 +5,6 @@ Bullet::Bullet()
 	: m_position(0.0f, 0.0f)
 	, m_velocity(0.0f, 0.0f)
 	, m_boundingRadius(0.0f)
-	, m_isActive(false)
 {
 }
 
@@ -18,41 +17,10 @@ void Bullet::init() {
 }
 
 void Bullet::update() {
-	if (false == m_isActive)
-	{
-		return;
-	}
-
 	m_position = m_position + m_velocity;
-
-	// wrap if go past screen bounds
-	if (m_position.x - m_boundingRadius > ofGetWindowWidth())
-	{
-		deactivate();
-	}
-
-	if (m_position.x + m_boundingRadius < 0)
-	{
-		deactivate();
-	}
-
-	if (m_position.y - m_boundingRadius > ofGetWindowHeight())
-	{
-		deactivate();
-	}
-
-	if (m_position.y + m_boundingRadius < 0)
-	{
-		deactivate();
-	}
 }
 
 void Bullet::render() {
-	if (false == m_isActive)
-	{
-		return;
-	}
-
 	ofSetRectMode(OF_RECTMODE_CENTER);
 
 	// draw asteroid
@@ -66,17 +34,7 @@ void Bullet::render() {
 
 void Bullet::fire(const ofVec2f& _position, const ofVec2f& _direction) {
 	m_position = _position;
-	m_velocity = _direction * 20.0f;
-
-	m_isActive = true;
-}
-
-void Bullet::deactivate() {
-	m_isActive = false;
-}
-
-bool Bullet::isActive() {
-	return m_isActive;
+	m_velocity = _direction * 1.0f;
 }
 
 ofVec2f Bullet::getPosition() {

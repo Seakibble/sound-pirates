@@ -15,9 +15,6 @@ public:
 	// fires the Bullet from a starting position towards a direction
 	void    fire(const ofVec2f& _position, const ofVec2f& _direction);
 
-	void    deactivate(); // disables the Bullet (called when hits something or goes off screen)
-	bool    isActive();   // returns if active or not
-
 	ofVec2f getPosition();
 	float   getRadius();
 
@@ -27,6 +24,4 @@ private:
 	float       m_boundingRadius;
 
 	ofImage     m_image;
-
-	bool        m_isActive;
 };

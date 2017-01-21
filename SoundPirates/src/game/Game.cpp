@@ -15,7 +15,9 @@ void Game::init() {
 	m_bgImage.load(ProjectConstants::IMG_PATH_SCREEN_BACKGROUND);
 
 	m_player.loadImage(ProjectConstants::IMG_PATH_PLAYER);
-	m_bullet.init();
+	for (int i = 0; i < 100; i++) {
+		m_bullet[i].init();
+	}
 }
 
 void Game::update() {
@@ -40,7 +42,9 @@ void Game::render() {
 	ofPopMatrix();
 
 	ofPushMatrix();
-		m_bullet.render();
+	for (int i = 0; i < 100; i++) {
+		m_bullet[i].render();
+	}
 	ofPopMatrix();
 }
 
@@ -81,7 +85,9 @@ void Game::updateShip() {
 
 		//if (false == m_bullet.isActive()) // only fire if the projectile is not already animating
 		//{
-			m_bullet.fire(m_player.getPosition(), getMousePosition());
+		for (int i = 0; i < 100; i++) {
+			m_bullet[i].fire(m_player.getPosition() - i, getMousePosition() - i);
+		}
 		//}
 	}
 
@@ -95,7 +101,9 @@ ofVec2f Game::getMousePosition() {
 }
 
 void Game::updateBullet() {
-	m_bullet.update();
+	for (int i = 0; i < 100; i++) {
+		m_bullet[i].update();
+	}
 }
 
 // Gets the game's current game state

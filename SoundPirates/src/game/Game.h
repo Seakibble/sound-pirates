@@ -37,5 +37,5 @@ private:
 
 	ofImage m_bgImage;
 
-	Bullet m_bullet;
+	Bullet m_bullet[100];
 };
