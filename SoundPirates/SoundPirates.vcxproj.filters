@@ -1,6 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameOverScreen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameWinScreen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TitleScreen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp">
       <Filter>addons\ofxGui\src</Filter>
     </ClCompile>
@@ -25,32 +52,8 @@
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp">
       <Filter>addons\ofxGui\src</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\Bullet.cpp">
       <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ofApp.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\app-screens\GameOverScreen.cpp">
-      <Filter>src\app-screens</Filter>
-    </ClCompile>
-    <ClCompile Include="src\app-screens\GameWinScreen.cpp">
-      <Filter>src\app-screens</Filter>
-    </ClCompile>
-    <ClCompile Include="src\app-screens\TitleScreen.cpp">
-      <Filter>src\app-screens</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\GameObject.cpp">
-      <Filter>src\game</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\Game.cpp">
-      <Filter>src\game</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\enemies\Swarm.cpp">
-      <Filter>src\game\enemies</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\enemies\AI.cpp">
-      <Filter>src\game\enemies</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,17 +69,35 @@
     <Filter Include="addons\ofxGui\src">
       <UniqueIdentifier>{645E9533-4DCD-6179-1CDF-CB65}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\game">
-      <UniqueIdentifier>{224eba17-d6e0-48ac-9ac0-e3e568c41af7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\app-screens">
-      <UniqueIdentifier>{148d69d6-c61c-4970-bb93-531d74b51ceb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\game\enemies">
-      <UniqueIdentifier>{125c8591-d8cd-4895-a245-47bcf0293492}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AllHeaders.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameOverScreen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameWinScreen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProjectConstants.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TitleScreen.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h">
       <Filter>addons\ofxGui\src</Filter>
     </ClInclude>
@@ -104,35 +125,8 @@
     <ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h">
       <Filter>addons\ofxGui\src</Filter>
     </ClInclude>
-    <ClInclude Include="src\AllHeaders.h">
+    <ClInclude Include="src\Bullet.h">
       <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\ofApp.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\ProjectConstants.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\app-screens\GameOverScreen.h">
-      <Filter>src\app-screens</Filter>
-    </ClInclude>
-    <ClInclude Include="src\app-screens\GameWinScreen.h">
-      <Filter>src\app-screens</Filter>
-    </ClInclude>
-    <ClInclude Include="src\app-screens\TitleScreen.h">
-      <Filter>src\app-screens</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\Game.h">
-      <Filter>src\game</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\GameObject.h">
-      <Filter>src\game</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\enemies\AI.h">
-      <Filter>src\game\enemies</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\enemies\Swarm.h">
-      <Filter>src\game\enemies</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
