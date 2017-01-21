@@ -1,0 +1,8 @@
+﻿  main.cpp
+  ofApp.cpp
+c:\of_v0.9.3_vs_release\apps\myapps\soundpirates\src\game\GameObject.h(16): warning C4042: '_asset': has bad storage class (compiling source file src\ofApp.cpp)
+c:\of_v0.9.3_vs_release\apps\myapps\soundpirates\src\game\GameObject.h(16): warning C4042: '_asset': has bad storage class (compiling source file src\main.cpp)
+  SoundPirates.vcxproj -> C:\of_v0.9.3_vs_release\apps\myApps\SoundPirates\bin\SoundPirates_debug.exe
+  SoundPirates.vcxproj -> bin\SoundPirates_debug.pdb (Full PDB)
+  
+  	                   9	C:\of_v0.9.3_vs_release\export\vs\Win32\
